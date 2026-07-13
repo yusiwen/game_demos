@@ -29,8 +29,12 @@
 brew install raylib
 cargo run --release -p demo01
 
-# Linux（需要 X11）
+# Linux（需要 X11 开发库）
 sudo apt install libx11-dev libxrandr-dev libxinerama-dev libxcursor-dev libxi-dev libgl1-mesa-dev
+cargo run --release -p demo01
+
+# Windows
+# 安装 Visual Studio Build Tools（或 mingw-w64）后直接编译，Raylib 自动处理依赖
 cargo run --release -p demo01
 ```
 
